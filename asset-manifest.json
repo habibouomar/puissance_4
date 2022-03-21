@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/puissance_4/static/css/main.9db2be2f.css",
+    "main.js": "/puissance_4/static/js/main.da59f98e.js",
+    "static/media/Cardi_BigArt.jpeg": "/puissance_4/static/media/Cardi_BigArt.6313ca53586642d8a1d1.jpeg",
+    "static/media/American Signs.otf": "/puissance_4/static/media/American Signs.bbdd47cea06a3f258135.otf",
+    "index.html": "/puissance_4/index.html",
+    "main.9db2be2f.css.map": "/puissance_4/static/css/main.9db2be2f.css.map",
+    "main.da59f98e.js.map": "/puissance_4/static/js/main.da59f98e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9db2be2f.css",
+    "static/js/main.da59f98e.js"
+  ]
+}
