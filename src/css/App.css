@@ -1,14 +1,14 @@
-@font-face{
+@font-face {
   font-family: comica;
   src: url("../css/American\ Signs.otf");
 }
-body
- {
-	background: url(../css/Cardi_BigArt.jpeg) bottom;
-	background-size: cover;
-	height: 100vh;
-	width: 99vw; 
-	position: relative;
+
+body {
+  background: url(../css/Cardi_BigArt.jpeg) center fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 99vw;
+  position: relative;
 }
 
 table {
@@ -73,9 +73,10 @@ table {
 }
 
 .message {
+  margin-top: 25px;
   text-align: center;
   font-family: "comica";
-  font-size: 25px;
+  font-size: 23px;
   color: white;
 }
 
@@ -101,4 +102,3 @@ table {
   border-radius: 100px;
   transition: background-color 0.5s;
 }
-

@@ -1,4 +1,5 @@
 import React from "react";
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 export class Grid extends React.Component {
     constructor(props) {
@@ -156,31 +157,40 @@ export class Grid extends React.Component {
     render() {
 
         return (
-            <>
-                <div className="button" onClick={() => { this.initBoard() }}>New Game</div>
 
-                <table>
-                    <thead></thead>
-                    <tbody>
+            <div class="container">
+                <div class="row">
 
-                        {this.state.board.map((row, rowIndex) => (<tr> {row.map((col, colIndex) => (
+                    <div class="col-12 col-sm-12">
+                        <div className="button" onClick={() => { this.initBoard() }}>New Game</div>
+                    </div>
 
-                            <td onClick={() => this.play(colIndex)}>
+                    <div class="col-12 col-sm-12">
+                        <table>
+                            <thead></thead>
+                            <tbody>
 
-                                <div className="cell">
-                                    <button className={this.state.board[rowIndex][colIndex]}></button>
-                                </div>
-                            </td>))}
+                                {this.state.board.map((row, rowIndex) => (<tr> {row.map((col, colIndex) => (
 
-                        </tr>))}
+                                    <td onClick={() => this.play(colIndex)}>
 
-                    </tbody>
-                </table>
+                                        <div className="cell">
+                                            <button className={this.state.board[rowIndex][colIndex]}></button>
+                                        </div>
+                                    </td>))}
 
-                <p className="message">{this.state.message}</p>
-            </>
+                                </tr>))}
 
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="col-12 col-sm-12">
+                        <p className="message">{this.state.message}</p>
+                    </div>
+
+                </div>
+            </div>
         )
-
     }
 }
